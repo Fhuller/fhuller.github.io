@@ -19,14 +19,9 @@
                 margin: 0 !important;
             }
 
-            a[href]:after {
-                content: ": " attr(href);
-                max-width: 300px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                display: inline-block;
-                vertical-align: bottom;
+            a {
+                text-decoration: none;
+                color: inherit !important;
             }
         }
 
@@ -54,29 +49,29 @@
 
         h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 26px;
             text-transform: uppercase;
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 18px;
             text-transform: uppercase;
             border-bottom: 1px solid #999;
-            margin: 15px 0 8px 0;
+            margin: 25px 0 12px 0;
         }
 
         p {
-            margin: 4px 0;
+            margin: 6px 0;
             font-size: 14px;
         }
 
         ul {
-            margin: 5px 0;
+            margin: 8px 0;
             padding-left: 20px;
         }
 
         li {
-            margin-bottom: 3px;
+            margin-bottom: 6px;
             font-size: 14px;
         }
 
@@ -84,17 +79,22 @@
             display: flex;
             justify-content: space-between;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .job-title {
             font-style: italic;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
             font-size: 14px;
+            color: #333;
         }
 
         .section-item {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
+        }
+
+        .skills-grid strong {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -105,44 +105,52 @@
         <header>
             <h1>Felipe Beppler Huller</h1>
             <p>
-                Joinville, SC | fhullerbr@gmail.com | +55 (47) 99970-4715 |
-                <a href="linkedin.com/in/felipe-beppler-huller">Linkedin</a> | <a href="github.com/Fhuller">GitHub</a> <br>
+                Joinville, SC |
+                <a href="mailto:fhullerbr@gmail.com">fhullerbr@gmail.com</a> |
+                +55 (47) 99970-4715 |
+                <a href="https://linkedin.com/in/felipe-beppler-huller" target="_blank">linkedin.com/in/felipe-beppler-huller</a> |
+                <a href="https://github.com/Fhuller" target="_blank">github.com/Fhuller</a>
             </p>
         </header>
 
         <section>
-            <h2>Resumo</h2>
+            <h2>Resumo Profissional</h2>
             <ul>
-                <li>Desenvolvedor .NET Pleno com experiência em front end (AngularJS) (3+ anos foco em backend)</li>
-                <li>Domínio em APIs REST e Integrações de sistemas</li>
-                <li>Experiência em Azure, SQL Server e práticas de DevOps</li>
-                <li>Adepto em liderança técnica e mentoria de times</li>
+                <li>Desenvolvedor .NET Pleno com atuação full stack em sistemas legados de missão crítica, com foco principal em backend.</li>
+                <li>Experiência no desenvolvimento completo de funcionalidades, do backend em .NET à interface frontend, garantindo entrega ponta a ponta.</li>
+                <li>Atuação recorrente em manutenção, correções emergenciais (hotfixes) e evolução incremental de sistemas produtivos.</li>
+                <li>Vivência em ambientes com restrições técnicas, priorizando estabilidade, performance e continuidade do negócio.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Habilidades</h2>
-            <p><strong>Back-end .NET:</strong> C#, ASP.NET Core, Entity Framework, Integrações de Sistemas, Arquitetura
-                em Camadas, SOLID, Dependency Injection</p>
-            <p><strong>Banco de Dados:</strong> SQL Server, Modelagem Relacional, Performance e Queries</p>
-            <p><strong>Cloud & DevOps:</strong> Microsoft Azure (App Services, SQL Azure), CI/CD, Git, JWT</p>
-            <p><strong>Idiomas:</strong> Português (Nativo) e Inglês (Avançado)</p>
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <p><strong>Back-end (principal foco):</strong> C#, .NET 6/8, ASP.NET Core, Entity Framework Core, LINQ, SQL Server, APIs REST.</p>
+                <p><strong>Arquitetura & Qualidade:</strong> SOLID, Dependency Injection, Testes Unitários (XUnit, Moq), Integrações de Sistemas, Sustentação e Hotfixes.</p>
+                <p><strong>Frontend (apoio à entrega):</strong> AngularJS, JavaScript, consumo de APIs REST, otimização de performance.</p>
+                <p><strong>Ambiente & DevOps:</strong> Azure (App Services, SQL Server), Git, CI/CD, JWT.</p>
+                <p><strong>Idiomas:</strong> Inglês Avançado e Português Nativo.</p>
+            </div>
         </section>
 
         <section>
-            <h2>Experiência</h2>
+            <h2>Experiência Profissional</h2>
 
             <div class="section-item">
                 <div class="exp-header">
                     <span>Seed APS</span>
                     <span>02/2024 - Atualmente</span>
                 </div>
-                <div class="job-title">Desenvolvedor .NET Pleno - Joinville, SC (Híbrido)</div>
+                <div class="job-title">Desenvolvedor .NET Pleno (Full Stack)</div>
                 <ul>
-                    <li>Desenvolvimento de aplicações Web escaláveis utilizando ASP.NET e Entity Framework</li>
-                    <li>Integrações complexas entre sistemas ERP, reduzindo até 80% o tempo de processamento</li>
-                    <li>Gestão de projetos e suporte especializado para empresa de blindagem veicular</li>
-                    <li>Mentoria técnica e supervisão de 2 desenvolvedores para elevar a qualidade do código</li>
+                    <li>Desenvolvimento de APIs REST em .NET e Entity Framework Core para sistemas do setor de blindagem veicular.</li>
+                    <li>Atuação full stack no desenvolvimento de funcionalidades completas, desde controllers, regras de negócio e persistência até a interface frontend.</li>
+                    <li>Criação e manutenção de módulos frontend em AngularJS para sistemas legados, seguindo padrões existentes e garantindo consistência visual e funcional.</li>
+                    <li>Implementação de integrações críticas com SAP via APIs REST e sincronização direta por banco de dados intermediário em SQL Server, reduzindo o tempo de processamento em aproximadamente 80%.</li>
+                    <li>Atuação frequente em correções emergenciais (hotfixes) e resolução de falhas em produção.</li>
+                    <li>Otimização de performance no frontend, incluindo análise e redução de watchers em AngularJS.</li>
+                    <li>Liderança técnica e mentoria de 2 desenvolvedores, realizando code reviews e disseminando boas práticas.</li>
                 </ul>
             </div>
 
@@ -151,10 +159,13 @@
                     <span>Fulltech Tecnologia</span>
                     <span>10/2022 - 08/2023</span>
                 </div>
-                <div class="job-title">Desenvolvedor Full-Stack Jr. - Joinville, SC (Híbrido)</div>
+                <div class="job-title">Desenvolvedor Full Stack Jr.</div>
                 <ul>
-                    <li>Implementação de funcionalidades em .NET Core e AngularJS</li>
-                    <li>Colaboração ativa em ciclos Scrum e padrões de design SOLID</li>
+                    <li>Atuação no desenvolvimento de produtos financeiros (BaaS e CaaS), com foco em estabilidade e alta disponibilidade.</li>
+                    <li>Desenvolvimento backend em .NET, incluindo APIs REST, regras de negócio e persistência de dados.</li>
+                    <li>Implementação de filas de processamento para garantir resiliência e ordenação de transações financeiras.</li>
+                    <li>Desenvolvimento e manutenção de interfaces frontend em AngularJS, consumindo APIs e criando novos fluxos operacionais.</li>
+                    <li>Participação ativa em ritos Scrum, colaborando em refinamentos técnicos e estimativas.</li>
                 </ul>
             </div>
 
@@ -163,18 +174,20 @@
                     <span>Hangar Digital</span>
                     <span>03/2022 - 10/2022</span>
                 </div>
-                <div class="job-title">Estágio em Desenvolvimento Web - Joinville, SC (Presencial)</div>
+                <div class="job-title">Estágio em Desenvolvimento Web</div>
                 <ul>
-                    <li>Fluxos Daily/Kanban e levantamento de requisitos com clientes</li>
-                    <li>Domínio de Git e operação em ambiente Linux</li>
+                    <li>Apoio no desenvolvimento e manutenção de landing pages e e-commerces, atuando em front com código e aprimorando SEO.</li>
+                    <li>Levantamento de requisitos com clientes e desenvolvimento de telas.</li>
+                    <li>Atuação em ambiente Linux e uso intensivo de controle de versão com Git.</li>
+                    <li>Organização de demandas utilizando Kanban e participação em reuniões diárias.</li>
                 </ul>
             </div>
         </section>
 
         <section>
             <h2>Educação</h2>
-            <p><strong>Graduação em Engenharia de Software</strong>, Católica de Santa Catarina, 2022-2025</p>
-            <p><strong>Técnico em Tecnologia da Informação</strong>, Escola Técnica Tupy, 2019 - 2020</p>
+            <p><strong>Graduação em Engenharia de Software</strong> | Católica de Santa Catarina (2022 - 2025)</p>
+            <p><strong>Técnico em Tecnologia da Informação</strong> | Escola Técnica Tupy (2019 - 2020)</p>
         </section>
     </div>
 
