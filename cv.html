@@ -7,21 +7,40 @@
     <title>felipe_beppler_huller_cv</title>
     <style>
         @media print {
+            @page {
+                size: A4;
+                margin: 0.6cm 1.0cm;
+            }
+
             body {
-                margin: 0;
-                padding: 0;
+                font-size: 12px;
+                line-height: 1.25;
             }
 
-            .container {
-                border: none !important;
-                box-shadow: none !important;
-                width: 21cm !important;
-                margin: 0 !important;
+            h1 {
+                margin-bottom: 4px;
             }
 
-            a {
-                text-decoration: none;
-                color: inherit !important;
+            h2 {
+                margin-top: 10px !important;
+                margin-bottom: 5px !important;
+            }
+
+            ul {
+                margin-top: 2px;
+                margin-bottom: 5px;
+            }
+
+            li {
+                margin-bottom: 2px;
+            }
+
+            .section-item {
+                margin-bottom: 8px !important;
+            }
+
+            header {
+                margin-bottom: 8px !important;
             }
         }
 
@@ -35,66 +54,70 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 30px;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 10px 40px;
         }
 
         header {
             text-align: center;
             border-bottom: 2px solid #333;
-            padding-bottom: 8px;
-            margin-bottom: 12px;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
         }
 
         h1 {
             margin: 0;
-            font-size: 26px;
+            font-size: 22px;
             text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: 3px;
+            text-transform: uppercase;
+            color: #333;
         }
 
         h2 {
-            font-size: 18px;
+            font-size: 13px;
             text-transform: uppercase;
             border-bottom: 1px solid #999;
-            margin: 25px 0 12px 0;
+            margin: 15px 0 8px 0;
         }
 
         p {
-            margin: 6px 0;
-            font-size: 14px;
+            margin: 4px 0;
+            font-size: 13.5px;
         }
 
         ul {
-            margin: 8px 0;
-            padding-left: 20px;
+            margin: 4px 0;
+            padding-left: 18px;
         }
 
         li {
-            margin-bottom: 6px;
-            font-size: 14px;
+            margin-bottom: 3px;
+            font-size: 13.5px;
         }
 
         .exp-header {
             display: flex;
             justify-content: space-between;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 13px;
         }
 
         .job-title {
             font-style: italic;
-            margin-bottom: 8px;
-            font-size: 14px;
+            margin-bottom: 4px;
+            font-size: 13.5px;
             color: #333;
         }
 
         .section-item {
-            margin-bottom: 15px;
-        }
-
-        .skills-grid strong {
-            font-size: 14px;
+            margin-bottom: 12px;
         }
     </style>
 </head>
@@ -104,34 +127,34 @@
     <div class="container">
         <header>
             <h1>Felipe Beppler Huller</h1>
+            <div class="subtitle">Engenheiro de Software (.NET) | APIs REST | SQL Server | Azure | AngularJS</div>
             <p>
                 Joinville, SC |
                 <a href="mailto:fhullerbr@gmail.com">fhullerbr@gmail.com</a> |
                 +55 (47) 99970-4715 |
-                <a href="https://linkedin.com/in/felipe-beppler-huller" target="_blank">linkedin.com/in/felipe-beppler-huller</a> |
-                <a href="https://github.com/Fhuller" target="_blank">github.com/Fhuller</a>
+                <a href="https://linkedin.com/in/felipe-beppler-huller"
+                    target="_blank">linkedin.com/in/felipe-beppler-huller</a> |
+                <a href="https://github.com/Fhuller" target="_blank">github.com/fhuller</a>
             </p>
         </header>
 
         <section>
             <h2>Resumo Profissional</h2>
-            <ul>
-                <li>Desenvolvedor .NET Pleno com atuação full stack em sistemas legados de missão crítica, com foco principal em backend.</li>
-                <li>Experiência no desenvolvimento completo de funcionalidades, do backend em .NET à interface frontend, garantindo entrega ponta a ponta.</li>
-                <li>Atuação recorrente em manutenção, correções emergenciais (hotfixes) e evolução incremental de sistemas produtivos.</li>
-                <li>Vivência em ambientes com restrições técnicas, priorizando estabilidade, performance e continuidade do negócio.</li>
-            </ul>
+            <p>
+                Engenheiro de Software com 4+ anos de experiência em desenvolvimento backend (C#/.NET) e frontend
+                (AngularJS e Vue.js), atuando na sustentação e evolução de sistemas corporativos de missão crítica.
+                Experiência no desenvolvimento de APIs REST, integrações entre sistemas, modelagem de dados e resolução
+                de incidentes em produção, com foco em estabilidade, performance e continuidade operacional.
+            </p>
         </section>
 
         <section>
             <h2>Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <p><strong>Back-end (principal foco):</strong> C#, .NET 6/8, ASP.NET Core, Entity Framework Core, LINQ, SQL Server, APIs REST.</p>
-                <p><strong>Arquitetura & Qualidade:</strong> SOLID, Dependency Injection, Testes Unitários (XUnit, Moq), Integrações de Sistemas, Sustentação e Hotfixes.</p>
-                <p><strong>Frontend (apoio à entrega):</strong> AngularJS, JavaScript, consumo de APIs REST, otimização de performance.</p>
-                <p><strong>Ambiente & DevOps:</strong> Azure (App Services, SQL Server), Git, CI/CD, JWT.</p>
-                <p><strong>Idiomas:</strong> Inglês Avançado e Português Nativo.</p>
-            </div>
+            <p><strong>Back-end:</strong> C#, .NET, ASP.NET, Entity Framework, Dapper, LINQ, SQL Server, APIs REST.</p>
+            <p><strong>Qualidade:</strong> SOLID, Dependency Injection, Testes Unitários (XUnit, Moq), CI/CD,
+                Sustentação.</p>
+            <p><strong>Frontend & Cloud:</strong> AngularJS, Vue.js, JavaScript, Azure, JWT, Git.</p>
+            <p><strong>Idiomas:</strong> Inglês Avançado, Espanhol Básico e Português Nativo.</p>
         </section>
 
         <section>
@@ -142,15 +165,33 @@
                     <span>Seed APS</span>
                     <span>02/2024 - Atualmente</span>
                 </div>
-                <div class="job-title">Desenvolvedor .NET Pleno (Full Stack)</div>
+                <div class="job-title">Desenvolvedor .NET Full Stack Pleno</div>
                 <ul>
-                    <li>Desenvolvimento de APIs REST em .NET e Entity Framework Core para sistemas do setor de blindagem veicular.</li>
-                    <li>Atuação full stack no desenvolvimento de funcionalidades completas, desde controllers, regras de negócio e persistência até a interface frontend.</li>
-                    <li>Criação e manutenção de módulos frontend em AngularJS para sistemas legados, seguindo padrões existentes e garantindo consistência visual e funcional.</li>
-                    <li>Implementação de integrações críticas com SAP via APIs REST e sincronização direta por banco de dados intermediário em SQL Server, reduzindo o tempo de processamento em aproximadamente 80%.</li>
-                    <li>Atuação frequente em correções emergenciais (hotfixes) e resolução de falhas em produção.</li>
-                    <li>Otimização de performance no frontend, incluindo análise e redução de watchers em AngularJS.</li>
-                    <li>Liderança técnica e mentoria de 2 desenvolvedores, realizando code reviews e disseminando boas práticas.</li>
+                    <li>
+                        Atuação full stack na evolução e sustentação de dois sistemas corporativos principais,
+                        baseados em frontend AngularJS integrado a APIs REST em .NET, garantindo estabilidade
+                        e evolução contínua das aplicações em produção.
+                    </li>
+                    <li>
+                        Identificação de gargalo crítico em integração causada por operações massivas via
+                        Entity Framework, redesenhando persistência para processamento em lote com SQL Server
+                        (tabelas temporárias e MERGE), reduzindo o tempo total de processamento em cerca de 80%.
+                    </li>
+                    <li>
+                        Investigação e correção de incidente crítico envolvendo <em>System.OutOfMemoryException</em>,
+                        implementando processamento em batches para evitar carregamento integral em memória e
+                        estabilizando definitivamente a rotina agendada.
+                    </li>
+                    <li>
+                        Desenvolvimento de novo módulo de vendas ampliando o domínio do sistema para novos tipos
+                        de produtos blindados, reutilizando o fluxo existente de pedidos e evoluindo regras de negócio
+                        mantendo compatibilidade com o legado.
+                    </li>
+                    <li>
+                        Atuação full stack na evolução de sistemas corporativos, realizando a mentoria técnica de 2 desenvolvedores 
+                        e conduzindo code reviews para garantir padrões de qualidade e boas práticas.
+                    </li>
+                    <li><strong>Tecnologias:</strong> .NET, EF, SQL Server, Azure, AngularJS, xUnit, Redis.</li>
                 </ul>
             </div>
 
@@ -159,13 +200,25 @@
                     <span>Fulltech Tecnologia</span>
                     <span>10/2022 - 08/2023</span>
                 </div>
-                <div class="job-title">Desenvolvedor Full Stack Jr.</div>
+                <div class="job-title">Desenvolvedor .NET Full Stack Jr.</div>
                 <ul>
-                    <li>Atuação no desenvolvimento de produtos financeiros (BaaS e CaaS), com foco em estabilidade e alta disponibilidade.</li>
-                    <li>Desenvolvimento backend em .NET, incluindo APIs REST, regras de negócio e persistência de dados.</li>
-                    <li>Implementação de filas de processamento para garantir resiliência e ordenação de transações financeiras.</li>
-                    <li>Desenvolvimento e manutenção de interfaces frontend em AngularJS, consumindo APIs e criando novos fluxos operacionais.</li>
-                    <li>Participação ativa em ritos Scrum, colaborando em refinamentos técnicos e estimativas.</li>
+                    <li>
+                        Desenvolvimento e manutenção sistemas financeiros, implementação de APIs REST, regras de negócio
+                        e persistência em SQL Server.
+                    </li>
+                    <li>
+                        Implementação de processamento assíncrono utilizando filas garantindo resiliência
+                        e ordenação de transações financeiras.
+                    </li>
+                    <li>
+                        Manutenção e evolução de interfaces AngularJS integradas ao backend, participando da
+                        entrega ponta a ponta de funcionalidades.
+                    </li>
+                    <li>
+                        Participação ativa em ritos Scrum, contribuindo com refinamentos e definições
+                        de soluções junto ao time.
+                    </li>
+                    <li><strong>Tecnologias:</strong> .NET, EF, SQL Server, AngularJS, RabbitMQ, Dapper, Git.</li>
                 </ul>
             </div>
 
@@ -174,12 +227,16 @@
                     <span>Hangar Digital</span>
                     <span>03/2022 - 10/2022</span>
                 </div>
-                <div class="job-title">Estágio em Desenvolvimento Web</div>
+                <div class="job-title">Estágio em Desenvolvimento Web (PHP / CodeIgniter)</div>
                 <ul>
-                    <li>Apoio no desenvolvimento e manutenção de landing pages e e-commerces, atuando em front com código e aprimorando SEO.</li>
-                    <li>Levantamento de requisitos com clientes e desenvolvimento de telas.</li>
-                    <li>Atuação em ambiente Linux e uso intensivo de controle de versão com Git.</li>
-                    <li>Organização de demandas utilizando Kanban e participação em reuniões diárias.</li>
+                    <li>
+                        Desenvolvimento e manutenção de landing pages e e-commerces, com foco em implementação
+                        frontend e melhorias de SEO.
+                    </li>
+                    <li>
+                        Levantamento de requisitos com clientes e implementação de interfaces em ambiente colaborativo.
+                    </li>
+                    <li><strong>Tecnologias:</strong> PHP (CodeIgniter), JavaScript, Linux, Git.</li>
                 </ul>
             </div>
         </section>
